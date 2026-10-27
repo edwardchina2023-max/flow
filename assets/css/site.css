@@ -443,7 +443,7 @@ figcaption b { color: var(--ink); font-weight: 600; }
 
 /* ---------- 课堂现场：通栏全景 + 讲者 + 片段 ---------- */
 .panorama { margin: 64px auto 0; max-width: var(--wrap); padding: 0 var(--gutter); }
-.panorama img { width: 100%; aspect-ratio: 27 / 14; height: auto; object-fit: cover; object-position: 50% 50%; }
+.panorama img { width: 100%; aspect-ratio: 16 / 9; height: auto; object-fit: cover; object-position: 50% 50%; }
 .panorama figcaption { border-top: 0; margin-top: 0; padding: 14px 0 0; }
 .lecturers {
   display: grid;
