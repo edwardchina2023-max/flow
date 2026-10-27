@@ -388,7 +388,10 @@ figcaption b { color: var(--ink); font-weight: 600; }
 
 /* ---------- 页脚 ---------- */
 .footer { background: var(--night); color: #9d998f; font-size: 13px; padding: 56px 0 40px; border-top: 1px solid #222; }
-.footer .cols { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+.footer .cols { display: grid; grid-template-columns: 2fr 1fr 1.4fr auto; gap: 40px; }
+.footer .qr { width: 148px; }
+.footer .qr img { width: 132px; height: 132px; background: #fff; padding: 8px; }
+.footer .qr p { margin: 10px 0 0; text-align: center; color: #cfcbc1; letter-spacing: .1em; }
 .footer h4 { color: #f2f0ea; font-family: var(--serif); font-size: 18px; margin: 0 0 12px; letter-spacing: .1em; }
 .footer a { color: #cfcbc1; }
 .footer .legal { margin-top: 40px; padding-top: 20px; border-top: 1px solid #2c2c2c; line-height: 1.8; }
@@ -439,9 +442,9 @@ figcaption b { color: var(--ink); font-weight: 600; }
 
 
 /* ---------- 课堂现场：通栏全景 + 讲者 + 片段 ---------- */
-.panorama { margin: 64px 0 0; }
-.panorama img { width: 100%; height: clamp(320px, 64vh, 720px); object-fit: cover; object-position: 50% 45%; }
-.panorama figcaption { border-top: 0; margin-top: 0; padding-top: 14px; }
+.panorama { margin: 64px auto 0; max-width: var(--wrap); padding: 0 var(--gutter); }
+.panorama img { width: 100%; aspect-ratio: 27 / 14; height: auto; object-fit: cover; object-position: 50% 50%; }
+.panorama figcaption { border-top: 0; margin-top: 0; padding: 14px 0 0; }
 .lecturers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
